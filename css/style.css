@@ -1,0 +1,234 @@
+/* Box Model Hack */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/*COLORS*/
+:root {
+  --black: #231F20;
+  --primary: #35B998;
+  --secondary: #FFCB27;
+  --tertiary: #C83B37;
+  font-family: 'Chivo', sans-serif;
+}
+@font-face {
+  font-family: 'market-deco';
+  src: url("../assets/Market_Deco.ttf");
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Chivo';
+}
+
+.main-container {
+  height: 91vh;
+  background-image: url('../assets/background-img.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+}
+
+
+/**HEADER**/
+
+header {
+  display: flex;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+/* header > * {
+  border: 1px solid black;
+} */
+
+.nav-right-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  width: 40%;
+
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image:url('../assets/restaurant-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mobile-nav-icon {
+  color: black;
+  width:20%;
+  padding: 5px 10px;
+}
+
+.mobile-nav-icon img {
+  float: right;
+}
+
+.order-now {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: var(--tertiary);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-family: 'Chivo';
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.order-now:hover {
+  background-color: (0, 136, 170, .2);
+}
+
+
+.mobile-dropdown {
+  display: none;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+/*MAIN SECTION*/
+.main-logo-container {
+  padding: 200px 0;
+  width: 100%;
+}
+
+.main-logo {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/*ABOUT*/
+
+.about-container {
+  height: 100vh;
+  padding: 20px;
+}
+
+.about-container > * {
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-container p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about-img-container {
+  width: 80%;
+  margin: 30% auto;
+}
+
+.about-img-container img {
+  max-width: 100%;
+  border: 1px solid var(--black);
+}
+
+
+/*MENU MADNESS*/
+
+
+
+
+.menu {
+  text-align: center;
+  list-style: none;
+}
+
+.menus {
+  font-family: "market-deco";
+}
+
+.menu-buttons {
+  margin: 0 35px;
+}
+
+
+.menu-buttons-nav {
+  list-style: none;
+}
+
+.menu-buttons-nav li {
+  margin: 3px;
+}
+
+.menu-buttons-nav li button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 5px;
+}
+
+
+.menu-container {
+  border: 2px solid var(--black);
+  margin: 15px;
+  padding: 5px;
+  display: none;
+}
+
+.item-wrapper {
+  margin: 20px;
+}
+.menu-container h2 {
+  font-size: 35px;
+}
+
+
+.menu-container span {
+  font-size: 25px;
+}
+
+.menu-container p {
+  font-size: 15px;
+}
+
+.menu-container p + span {
+  font-size: 13px;
+}
+
+#appetizer-menu {
+  display: block;
+}

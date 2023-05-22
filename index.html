@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://unpkg.com/feather-icons"></script> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200;600&family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+	<body>
+		<header>
+			<div class="logo-container">
+				<div class="logo"></div>
+			</div> 
+
+			<div class="nav-right-container">
+				<div class="order-now-button-wrapper">
+					<button class="order-now">Order Now</button>
+				</div>
+			</div>
+
+			<div class="mobile-dropdown">
+				<nav class="mobile-nav">
+					<ul>
+						<li><a href=".about-container">About Us</a></li>
+						<li><a href=".cuisine-container">Menu</a></li>
+						<li><a href=".hours-container">Location</a></li>
+						<li><a href=".testimonials-container">Reviews</a></li>
+					</ul>
+				</nav>
+			</div>
+			<nav class="desktop-nav"></nav>
+			
+		</header>
+		<div class="main-container">
+			<div class="sub-container">
+				<div class="main-logo-container">
+					<img class="main-logo" src="../restaurant/assets/restaurant-logo.png" alt="">
+				</div>
+
+			</div>
+		</div>
+		<div class="about-container">
+			<h2>About Us</h2>
+			<p>Welcome to Mad Eats</p>
+			<p>Located in the Bluff Heights neighborhood of Long Beach, Mad Eats 
+				serves Breakfast, Lunch, Happy Hour and Dinner, featuring a menu of 
+				quintessential dishes that honor the classics of American dining 
+				created by our chefs.</p>
+			<p>Local coffee roasters such as Rose Park Roasters brew our coffee all
+				 day. Vegetarian and vegan options are available.</p>
+			<div class="about-img-container">
+				<img src="../restaurant/assets/burger.jpeg" alt="">
+			</div>
+		</div>
+		<div class="cuisine-container">
+			<h2>Menu</h2>
+			<div class="menu">
+				<div class="menu-buttons">
+					<ul class="menu-buttons-nav">
+						<li class="menu-button appetizer-button"><button onclick="switchMenu('appetizer-menu')" type="button" href="#appetizer-menu">Appetizer</button></li>
+						<li class="menu-button lunch-button"><button onclick="switchMenu('lunch-menu')" type="button" href="#lunch-menu">Lunch</button></li>
+					</ul> 
+				</div>
+				<div class="menus">
+					<div class="menu-container" id='appetizer-menu'>
+						<section>
+							<h2>Appetizers</h2>
+							<div class="item-wrapper">
+								<span>BACON WRAPPED JALAPENOS</span>
+								<p>cheddar cheese & ranch</p>
+								<span>10</span>
+							</div>
+							<div class="item-wrapper">
+								<span>TOMATO SOUP</span>
+								<p>parsley, parmesan cheese & croutons</p>
+								<span>8</span>
+							</div>
+							<div class="item-wrapper">
+								<span>CRAB CAKES</span>
+								<p>horseradish sauce</p>
+								<span>15</span>
+							</div>
+							<div class="item-wrapper">
+								<span>WAFFLE-CUT FRIES</span>
+								<p>sriracha mayo & ketchup</p>
+								<span>6</span>
+							</div>
+						</section>
+					</div>
+					<div class="menu-container" id='lunch-menu'>
+						<section>
+							<h2>Lunch</h2>
+							<div class="item-wrapper">
+								<span>BACON CHEESEBURGER</span>
+								<p>sriracha mayo & ketchup</p>
+								<span>15</span>
+							</div>
+							<div class="item-wrapper">
+								<span>COUNTRY FRIED STEAK</span>
+								<p>gravy & fries</p>
+								<span>18</span>
+							</div>
+							<div class="item-wrapper">
+								<span>CLUB SANDWICH</span>
+								<p>chips & pickles</p>
+								<span>14</span>
+							</div>
+							<div class="item-wrapper">
+								<span>PHILLY CHEESESTEAK</span>
+								<p>beef au jus & fries</p>
+								<span>16</span>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hours-container">
+			
+		</div>
+		<div class="testimonials-container">
+
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
